@@ -1,0 +1,193 @@
+/*----header-----*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe4c4;
+    padding: 10px 20px;
+}
+
+
+header img {
+    height: 80px;
+    width: 80px;
+}
+
+.header-logo img{
+    transition: 0.4s ease-in-out;
+}
+
+.header-logo img:hover{
+    transform: scale(1.1);
+}
+
+
+nav button {
+    background-color: #8a4e20;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+nav button:hover {
+    background-color: #6b4226;
+    transform: scale(1.05);
+}
+
+
+header nav ul li {
+    color: #8a4e20;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+    margin: 0 1em;
+}
+
+
+
+/*------body-------*/
+main {
+    padding: 20px;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #8a4e20;
+    text-align: center;
+}
+
+
+
+/*------Courses-----*/
+/* General Section Styles */
+#course {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#course h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#course p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Button Styles */
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.link-btn img {
+    margin-right: 10px;
+    height: 24px;
+}
+
+/* Additional Styles for Responsive Design */
+@media (max-width: 768px) {
+    .link-btn {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+
+
+
+
+
+
+/*footer*/
+footer {
+    color: white;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: #8a4e20; /* Dark background for footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p, footer a {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+footer a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffe4c4; /* Blue color on hover */
+}
+
+.footer-logo img {
+    height: 40px; /* Adjust the logo size as needed */
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover img{
+    transform: scale(1.1);
+}
+
+
+.footer-logo, .foot-container p:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Adjustments for footer layout */
+@media (min-width: 600px) {
+    footer p, footer a{
+        margin: 5px 10px;
+    }
+}

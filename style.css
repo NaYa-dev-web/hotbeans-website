@@ -1,0 +1,938 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:  whitesmoke; 
+}
+
+
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe4c4;
+    padding: 10px 20px;
+}
+
+header img {
+    height: 80px;
+    width: 80px;
+}
+
+.header-logo img{
+    transition: 0.4s ease-in-out;
+}
+
+.header-logo img:hover{
+    transform: scale(1.1);
+}
+
+nav button {
+    background-color: #8a4e20;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav button:hover {
+    background-color: #6b4931;
+    transform: scale(1.05);
+}
+
+header nav ul li {                          
+    color: #8a4e20;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+    margin: 0 1em;
+}
+
+
+
+
+/*Home*/
+.welcome-section {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.welcome-section img {
+    width: 100%;
+    height: 565px;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 3.3em;
+    animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/*body*/
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #8a4e20;
+}
+
+section {
+    background: #ffe4c4;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+p{
+    color: black;
+}
+
+
+
+
+
+/*Apply and View*/
+.buttons {
+    display: flex; 
+  }
+  
+  .buttons a {
+    flex: 1; 
+    margin: 0 5px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: 2px solid white; 
+    color: black; 
+    background-color: white;
+  }
+  
+  .buttons a:hover {
+    background-color: #8a4e20; 
+    color: #fff; 
+  }
+  
+  .view-careers-btn {
+    order: 1; 
+  }
+  
+  .apply-now-btn {
+    order: 2; 
+  }
+
+
+
+
+
+  /*review team and requirement buttons*/
+  .broken-border, .find-team {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fafafa;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      max-width: 400px;
+    }
+    
+    /* Button styling */
+    button {
+      display: inline-block;
+      padding: 15px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #0056b3;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+    /* Specific classes for buttons */
+    .view-course-btn {
+      background-color: #c28960; /* Green color for the Review Requirements button */
+    }
+    
+    .view-course-btn:hover {
+      background-color: #6b4226;
+    }
+    
+    .find-team-btn {
+      background-color: #8a4e20; /* Blue color for the Find Team button */
+    }
+    
+    .find-team-btn:hover {
+      background-color: #70390f;
+    }
+
+
+
+
+/*learn-more button*/
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+#about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#about h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+#about p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #c28960;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Container for the button */
+.learn-more-container {
+    text-align: center; /* Center the button horizontally */
+}
+
+
+
+
+
+/*ContactSection*/
+section#contact {
+    margin-top: 2em;
+}
+
+section#contact h2 {
+    color: #8a4e20;
+}
+
+section#contact form {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section#contact label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+section#contact input[type="text"], section#contact input[type="email"], section#contact textarea{
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+section#contact button {
+    background-color: #8a4e20;
+    color: white;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section#contact button:hover {
+    background-color: #6b4226;
+}
+
+
+
+
+
+/* Footer styles */
+footer {
+    color: white;
+    text-align: center;
+}
+footer {
+    background-color: #8a4e20; 
+    color: #fff; 
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p, footer a {
+    margin: 5px 0; 
+}
+
+footer a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6b4226; /* Blue color on hover */
+}
+
+.footer-logo img {
+    height: 40px; /* Adjust the logo size as needed */
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover img{
+    transform: scale(1.1);
+}
+
+.footer-logo, .foot-container p:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Adjustments for footer layout */
+@media (min-width: 600px) {
+    footer p, footer a{
+        margin: 5px 10px;
+    }
+}
+
+
+
+
+
+
+/*_______PAGES__________*/
+
+/* About Page*/
+#about h2 {
+    text-align: center;
+    color: #333;
+}
+
+#about p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
+
+/* Vision and Values Sections */
+.values-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.values-section > div {
+    background: #e0e0e0;
+    margin: 10px 0;
+    padding: 20px;
+    flex: 0 0 48%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.values-section > div.full-width {
+    flex: 0 0 100%;
+}
+
+.values-section > div.center {
+    margin: 10px auto;
+    width: 50%;
+    flex: 0 0 100%;
+}
+
+.values-section h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* Specific Sections for Innovation, Quality, Teamwork, and Growth */
+.innovation {
+    align-self: flex-start;
+}
+
+.quality {
+    align-self: flex-start;
+}
+
+.teamwork {
+    align-self: center;
+}
+
+.growth {
+    align-self: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .values-section > div {
+        flex: 0 0 100%;
+    }
+
+    .values-section > div.center {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*Team Page*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+table th, table td{
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+}
+
+table th{
+    background-color: #f8f1e9;
+}
+
+.team-photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+}
+
+.team-member img{
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1em;
+    float: left;
+}
+
+section p {
+    font-size: 16px;
+}
+
+
+
+
+
+/*Career page*/
+.job-box{
+    background: #fff;
+    padding: 20px;
+    border: 1px solid#ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    display: inline-block;
+}
+
+.job-box h2{
+    margin-bottom: 10px;
+}
+
+.job-box p{
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+
+
+/*-----Requirement------*/
+.mytabs{
+    width: 90%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+.mytabs input{
+    display: inline;
+}
+
+.mytabs label{
+    padding: 25px;
+    background-color: #8a4e20;
+    color: white;
+    margin-right: 5px;
+}
+
+.mytabs input{
+    color: none;
+}
+
+.mytabs .tab{
+    width: 100%;
+    padding: 20px;
+    background: #ddd;
+    order: 1;
+    display: none;
+}
+
+.mytabs p{
+    color: white;
+}
+
+.mytabs input:checked + label +.tab{
+    display: block;
+}
+
+.mytabs input:checked + label{
+    background: #6b4226;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Requirement and Skills*/
+.mytabs{
+    width: 90%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+.mytabs input{
+    display: inline;
+}
+
+.mytabs label{
+    padding: 25px;
+    background-color: #8a4e20;
+    color: white;
+    margin-right: 5px;
+}
+
+.mytabs input{
+    color: none;
+}
+
+.mytabs .tab{
+    width: 100%;
+    padding: 20px;
+    background: #ddd;
+    order: 1;
+    display: none;
+}
+
+.mytabs p{
+    color: white;
+}
+
+.mytabs input:checked + label +.tab{
+    display: block;
+}
+
+.mytabs input:checked + label{
+    background: #6b4226;
+}
+
+
+
+
+
+/*Course Page*/
+#course {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#course h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#course p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Button Styles */
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.link-btn img {
+    margin-right: 10px;
+    height: 24px;
+}
+
+/* Additional Styles for Responsive Design */
+@media (max-width: 768px) {
+    .link-btn {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+
+
+
+
+/*Apply Page*/
+form {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.apply h2{
+    text-align: center;
+}
+
+.apply h3{
+    text-align: left;
+}
+
+.apply p{
+    text-align: justify;
+}
+form label {
+    margin-bottom: 0.5em 0 0.2em;
+    
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.main-section{
+    flex: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    background-color: #fff;
+}
+
+form button {
+    background-color: #8a4e20;
+    color: white;
+    margin-bottom: 10px;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #6b4226;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

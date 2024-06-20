@@ -1,0 +1,205 @@
+/*----header-----*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe4c4;
+    padding: 10px 20px;
+}
+
+
+header img {
+    height: 80px;
+    width: 80px;
+}
+
+.header img {
+    height: 80px;
+    width: 80px;
+}
+
+.header-logo img{
+    transition: 0.4s ease-in-out;
+}
+
+.header-logo img:hover{
+    transform: scale(1.1);
+}
+
+
+nav button {
+    background-color: #8a4e20;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+nav button:hover {
+    background-color: #6b4226;
+    transform: scale(1.05);
+}
+
+
+header nav ul li {
+    color: #8a4e20;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+    margin: 0 1em;
+}
+
+
+
+/*------body-------*/
+main {
+    padding: 20px;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #8a4e20;
+    text-align: center;
+}
+
+
+
+
+/*--------Careers------*/
+.job-box{
+    background: #fff;
+    padding: 20px;
+    border: 1px solid#ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    display: inline-block;
+}
+
+.job-box h2{
+    margin-bottom: 10px;
+}
+
+.job-box p{
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+
+
+/*-----Requirement------*/
+.mytabs{
+    width: 90%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+.mytabs input{
+    display: inline;
+}
+
+.mytabs label{
+    padding: 25px;
+    background-color: #8a4e20;
+    color: white;
+    margin-right: 5px;
+}
+
+.mytabs input{
+    color: none;
+}
+
+.mytabs .tab{
+    width: 100%;
+    padding: 20px;
+    background: #ddd;
+    order: 1;
+    display: none;
+}
+
+.mytabs p{
+    color: white;
+}
+
+.mytabs input:checked + label +.tab{
+    display: block;
+}
+
+.mytabs input:checked + label{
+    background: #6b4226;
+}
+
+/*footer*/
+footer {
+    color: white;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: #8a4e20; /* Dark background for footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p, footer a {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+footer a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffe4c4; /* Blue color on hover */
+}
+
+.footer-logo img {
+    height: 40px; /* Adjust the logo size as needed */
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover img{
+    transform: scale(1.1);
+}
+
+
+.footer-logo, .foot-container p:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Adjustments for footer layout */
+@media (min-width: 600px) {
+    footer p, footer a{
+        margin: 5px 10px;
+    }
+}
+
